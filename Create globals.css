@@ -1,0 +1,174 @@
+html,
+body {
+  padding: 300;
+  margin: 300;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  align-items: flex-end;
+}
+
+* {
+  box-sizing: border-box;
+  box-shadow: beige;
+  color:rgba(243, 214, 178, 0.514);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Cookie&family=EB+Garamond&display=swap');
+
+
+.body {
+  margin: 0;
+  padding: 0;
+  display: flexbox;
+  justify-content: center;
+  align-items: center;
+  font-family: "EB Garamond", seriff;
+  min-height: 100vh;
+  background-color: #a9c9ff;
+  background-image: linear-gradient(180deg, #a9c9ff 0%, #ffbbec 100%);
+}
+  .container {
+    max-width: 100vw;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 35px;
+    margin: 0 auto;
+    padding: 40px 0;
+    align-items: center;
+  }
+
+    .card {
+      position: relative;
+      width: 300px;
+      height: 400px;
+      margin: 0 auto;
+      background: #b29f94;
+      border-radius: 15px;
+      box-shadow: 0 15px 60px rgba(0, 0, 0, 0.5);
+    }
+
+      .face {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+        .face1 {
+          box-sizing: border-box;
+          padding: 20px;
+            margin: 0;
+            padding: 0;
+          }
+
+          .java {
+            background-color: #eef2f3;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent
+            ;
+          }
+
+          .python {
+            background-color: #eef2f3;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+          }
+
+          .cSharp {
+            background-color: #eef2f3;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+          }
+        
+
+        .face2 {
+          transition: 0.5s;
+            margin: 0;
+            padding: 0;
+            font-size: 10em;
+            color: #fff;
+            transition: 0.5s;
+            text-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            z-index: 10;
+          }
+        
+
+    .card:hover .face.face2 {
+      height: 30px;
+      font-size: 1em;
+      }
+    
+
+    .card:nth-child(1) .face.face2 {
+      background-image: linear-gradient(
+        40deg,
+        #F2F2F2 0%,
+        #E2E2E2 45%,
+        #C9D6FF 100%
+      );
+      border-radius: 15px;
+    }
+
+    .card:nth-child(2) .face.face2 {
+      background-image: linear-gradient(
+        40deg,
+        #F2F2F2 0%,
+        #d9a7c7 45%,
+        #fffcdc 100%
+      );
+      border-radius: 15px;
+    }
+
+    .card:nth-child(3) .face.face2 {
+      background-image: linear-gradient(
+        40deg,
+        #F2F2F2 0%,
+        #eacda3 45%,
+        #d6ae7b 100%
+      );
+      border-radius: 15px;
+    }
+  
+
+    .footer a {
+      display: float;
+      justify-content: center;
+      align-items: center;
+      flex-grow: 1;
+    }
+    
+   
+  
+  .html-body {
+      height: 100%;
+  }
+  .wrapper {
+      min-height: 100%;
+      height: auto !important;
+      height: 100%;
+      margin: 0 auto -142px; /* the bottom margin is the negative value of the footer's height */
+  }
+  .footer, .push {
+      height: 14px; /* .push must be the same height as .footer */
+  }
+    
+
+
+ 
+  
+    
+
+
+
+
+
+
